@@ -6,7 +6,7 @@
 
 -- PROCEDURES
 IF OBJECT_ID('xxxxxxxxxxxxxxxxxxxxxxxxx') IS NULL
-EXEC('CREATE PROCEDURE xxxxxxxxxxxxxxxxxxxxxxxxx AS SET NOCOUNT ON;')
+EXEC('CREATE PROCEDURE xxxxxxxxxxxxxxxxxxxxxxxxx AS SET NOCOUNT ON;');
 GO
 
 
@@ -17,22 +17,22 @@ GO
 
 -- TABLES
 IF OBJECT_ID('xxxxxxxxxxxxxxxxxxxxxxxxx') IS NOT NULL
-DROP TABLE xxxxxxxxxxxxxxxxxxxxxxxxx
+DROP TABLE xxxxxxxxxxxxxxxxxxxxxxxxx;
 GO
 
 -- VIEWS 
 IF OBJECT_ID('xxxxxxxxxxxxxxxxxxxxxxxxx') IS NOT NULL
-DROP VIEW xxxxxxxxxxxxxxxxxxxxxxxxx
+DROP VIEW xxxxxxxxxxxxxxxxxxxxxxxxx;
 GO
 
 -- FUNCTIONS
 IF OBJECT_ID('xxxxxxxxxxxxxxxxxxxxxxxxx') IS NOT NULL
-DROP FUNCTION xxxxxxxxxxxxxxxxxxxxxxxxx
+DROP FUNCTION xxxxxxxxxxxxxxxxxxxxxxxxx;
 GO
 
 -- PROCEDURES
 IF OBJECT_ID('xxxxxxxxxxxxxxxxxxxxxxxxx') IS NOT NULL
-DROP PROCEDURE xxxxxxxxxxxxxxxxxxxxxxxxx
+DROP PROCEDURE xxxxxxxxxxxxxxxxxxxxxxxxx;
 GO
 
 
@@ -43,21 +43,21 @@ GO
 
 -- TABLES
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'U' AND name = 'xxxxxxxxxxxxxxxxxxxxxxxxx')
-DROP TABLE xxxxxxxxxxxxxxxxxxxxxxxxx
+DROP TABLE xxxxxxxxxxxxxxxxxxxxxxxxx;
 GO
 
 -- VIEWS 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'V' AND name = 'xxxxxxxxxxxxxxxxxxxxxxxxx')
-DROP VIEW xxxxxxxxxxxxxxxxxxxxxxxxx
+DROP VIEW xxxxxxxxxxxxxxxxxxxxxxxxx;
 GO
 
 -- FUNCTIONS
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'FN' AND name = 'xxxxxxxxxxxxxxxxxxxxxxxxx')
-DROP FUNCTION xxxxxxxxxxxxxxxxxxxxxxxxx
+DROP FUNCTION xxxxxxxxxxxxxxxxxxxxxxxxx;
 GO
 
 -- PROCEDURES
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'xxxxxxxxxxxxxxxxxxxxxxxxx')
-DROP PROCEDURE xxxxxxxxxxxxxxxxxxxxxxxxx
+DROP PROCEDURE xxxxxxxxxxxxxxxxxxxxxxxxx;
 GO
 
