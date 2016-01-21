@@ -1,13 +1,13 @@
 BEGIN TRY
-    BEGIN TRANSACTION xxx_x_xxx;
+    BEGIN TRANSACTION ___xxxx___;
 
 	-- ...
 
-    COMMIT TRANSACTION xxx_x_xxx;
+    COMMIT TRANSACTION ___xxxx___;
 END TRY
 BEGIN CATCH
     IF(@@TRANCOUNT > 0)
-        ROLLBACK TRAN xxx_x_xxx;
+        ROLLBACK TRAN ___xxxx___;
 
     DECLARE 
         @ErrorMessage NVARCHAR(4000),
