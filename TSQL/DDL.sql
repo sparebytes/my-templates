@@ -21,13 +21,13 @@ ALTER TABLE dbo.xxxxxxxxxxxxxxxxxxx
 ;
 
 --
--- Add Non-Clustered Index
+-- Add Unique Non-Clustered Index
 --
 CREATE UNIQUE NONCLUSTERED INDEX IX_NC_xxxxxxxxxxxxxxxxxxx_yyyyyyyyyyyyyyyyyyy_yyyyyyyyyyyyyyyyyyy
     ON dbo.xxxxxxxxxxxxxxxxxxx (yyyyyyyyyyyyyyyyyyy, yyyyyyyyyyyyyyyyyyy)
 
 --
--- Add Clustered Index
+-- Add Unique Clustered Index
 --
 CREATE UNIQUE CLUSTERED INDEX IX_C_xxxxxxxxxxxxxxxxxxx
     ON dbo.xxxxxxxxxxxxxxxxxxx (yyyyyyyyyyyyyyyyyyy, yyyyyyyyyyyyyyyyyyy)
