@@ -16,8 +16,8 @@ with cols as (
 		ORDINAL_POSITION,
 		CASE 
 			WHEN DATA_TYPE = 'varchar' THEN 'string'
-			WHEN DATA_TYPE = 'datetime' AND IS_NULLABLE = 'NO' THEN 'DateTime'
-			WHEN DATA_TYPE = 'datetime' AND IS_NULLABLE = 'YES' THEN 'DateTime?'
+			WHEN DATA_TYPE in ('datetime', 'date') AND IS_NULLABLE = 'NO' THEN 'DateTime'
+			WHEN DATA_TYPE in ('datetime', 'date') AND IS_NULLABLE = 'YES' THEN 'DateTime?'
 			WHEN DATA_TYPE = 'int' AND IS_NULLABLE = 'YES' THEN 'int?'
 			WHEN DATA_TYPE = 'int' AND IS_NULLABLE = 'NO' THEN 'int'
 			WHEN DATA_TYPE = 'smallint' AND IS_NULLABLE = 'NO' THEN 'Int16'
