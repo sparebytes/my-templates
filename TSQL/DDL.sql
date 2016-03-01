@@ -31,3 +31,19 @@ CREATE UNIQUE NONCLUSTERED INDEX IX_NC_xxxxxxxxxxxxxxxxxxx_yyyyyyyyyyyyyyyyyyy_y
 --
 CREATE UNIQUE CLUSTERED INDEX IX_C_xxxxxxxxxxxxxxxxxxx
     ON dbo.xxxxxxxxxxxxxxxxxxx (yyyyyyyyyyyyyyyyyyy, yyyyyyyyyyyyyyyyyyy)
+
+
+--
+-- Add Column
+--
+ALTER TABLE dbo.xxxxxxxxxxxxxxxxxxx
+	ADD yyyyyyyyyyyyyyyyyyy int NOT NULL default 0;
+
+
+--
+-- Add Foriegn Key
+--
+ALTER TABLE dbo.xxxxxxxxxxxxxxxxxxx
+	ADD CONSTRAINT fk_XxxxYyyy
+		FOREIGN KEY (yyyyyyyyyyyyyyyyyyyId)
+		REFERENCES yyyyyyyyyyyyyyyyyyyId(yyyyyyyyyyyyyyyyyyyId);
