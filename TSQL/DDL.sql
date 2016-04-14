@@ -39,6 +39,11 @@ CREATE UNIQUE CLUSTERED INDEX IX_C_xxxxxxxxxxxxxxxxxxx
 ALTER TABLE dbo.xxxxxxxxxxxxxxxxxxx
 	ADD yyyyyyyyyyyyyyyyyyy int NOT NULL default 0;
 
+--
+-- AlterColumn
+--
+ALTER TABLE dbo.xxxxxxxxxxxxxxxxxxx
+	ALTER COLUMN yyyyyyyyyyyyyyyyyyy tttttt NOT NULL;
 
 --
 -- Add Foriegn Key
